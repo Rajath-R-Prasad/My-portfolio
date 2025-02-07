@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>developer's portfolio</title>
+    <link rel="stylesheet" href="output.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    li{
+      list-style-type: none;
+      position:relative;
+      color: white;
+      &:hover{
+        font-weight:bold;
+      }
+    } 
+    li::after{
+      content: " ";
+      position:absolute;
+      bottom:-9px;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background-color: white;
+      transform: scalex(0);
+      transition: transform 0.15s ease;
+    } 
+    li:hover::after{
+      transform: scaleX(1);
+    }
+    </style>
+  </head>
+  <body class=" h-screen  font-[poppins] bg-gradient-to-r from-gray-800 to-blue-900 bg-no-repeat bg-cover bg-right bg-fixed " style="background-image: url('background.png');">
+    <header class="  bg-zinc-600">
+      <nav id="nav" class="flex items-center lg:justify-evenly px-12 h-16 lg:gap-8">
+        <ion-icon name="menu-sharp" class="toggle-button -rotate-180 transition-all  lg:hidden mr-2 text-white text-4xl"></ion-icon>
+        <a id="left" href="#" class="text-xl sm:text-2xl my-4 py-1 bg-transparent text-white whitespace-nowrap">RAJATH'S PORTFOLIO</a>
+          <div id="right" class="absolute -top-full left-0 max-lg:bg-zinc-600 w-full flex flex-col items-center gap-6 py-2 text-lg  lg:static justify-evenly lg:flex-row lg:justify-center lg:ml-60" >
+              <ul class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-8 gap-5"> 
+                <li>
+                  <a href="portfolio.html">Home</a>
+                </li>
+              
+              
+                <li>
+                  <a href="" class="bg-gray-500 rounded-lg px-3 py-2">About</a>
+                </li>
+             
+              
+                <li>
+                  <a href="">My projects</a>
+                </li>
+              
+              
+                <li>
+                  <a href="">Contact me</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+        
+        <!-- <ion-icon name="menu" class="toggle-button p-2 lg:p-0 lg:hidden text-white text-3xl">h</ion-icon> -->
+      </nav>
+    </header><br>
+    <!-- <h1 class="text-white text-3xl text-center font-bold underline">ABOUT ME</h1> -->
+    <section class="h-[80vh] m-3 rounded-md grid  grid-cols-1 sm:grid-rows-1 sm:grid-cols-12 gap-5 sm:gap-3 p-5">
+      <div class="about rounded-lg h-max sm:h-[80vh] p-2 sm:col-span-3  flex flex-col shadow-sky-700 shadow-lg  items-center gap-2 backdrop:blur-md  bg-gradient-to-b from-black to-gray-700">
+        <div class="top flex flex-col items-center gap-1">
+          <span><img src="my photo.png" alt="my photo" class="h-[110px] w-[100px] rounded-xl object-cover my-1 object-center"></span>
+          <span class="text-2xl text-white font-bold">Rajath R Prasad</span><br>
+          <span class="text-xl text-white font-bold w-max bg-blue-400 rounded-lg mb-2 p-2">Web developer</span>
+        </div><hr class="w-[80%] border-blue-700 border-1"><br>
+        <div class="bottom flex flex-row flex-wrap sm:flex-col gap-2">
+          <span class="sm:text-lg text-gray-300"><ion-icon name="mail-sharp" class="text-xl"></ion-icon> Email: <br>rajath2010rrp@gmail.com</span><br>
+          <span class="sm:text-lg text-gray-300"><ion-icon name="call-sharp"></ion-icon>Phone:<br>8050807599</span><br>
+          <span class="sm:text-lg text-gray-300"><ion-icon name="location-sharp"></ion-icon>Location:<br>Mysuru,Karnataka</span>
+      </div>
+        </div>
+      <div class="details  sm:col-span-9 h-max bg-opacity-40 bg-gradient-to-b from-black  to-gray-700 rounded-lg">
+        <h1 class="text-gray-200 font-bold text-2xl underline p-3">About me</h1>
+        <p class="text-gray-300 font-light text-sm sm:text-md p-3">I'm a passionate web developer based in the vibrant city of Mysuru, Karnataka. With a strong foundation in front-end technologies, I bring websites to life using HTML, CSS, and JavaScript. My expertise extends to modern frameworks like Tailwind CSS, allowing me to create sleek and responsive user interfaces efficiently. <br>Beyond web development, I'm well-versed in Python programming, which serves as a bridge to my growing interests in the exciting fields of artificial intelligence, machine learning, and data science. This combination of skills positions me at the intersection of web technologies and cutting-edge data-driven solutions.</p>
+        <div class="skills">
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+        const togglebutton=document.querySelector('.toggle-button');
+        const nav=document.querySelector('#right');
+        togglebutton.addEventListener('click',()=>{
+          nav.classList.toggle('top-[64px]');
+          togglebutton.classList.toggle('-rotate-180')
+        });
+        
+    
+      </script> 
+      </body>
+    </html>
