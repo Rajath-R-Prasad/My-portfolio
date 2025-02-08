@@ -10,7 +10,7 @@ Welcome to my **personal portfolio website**, built using **HTML, Tailwind CSS, 
 - 📞 **Contact Form & Social Links**
   
 ## 📸 Preview
-[Live Demo](https://your-username.github.io/your-repo/)  
+[Live Demo](https://rajath-r-prasad.github.io/My-portfolio/)  
 
 ## 🛠️ Tech Stack
 - **HTML** - Structure of the website  
