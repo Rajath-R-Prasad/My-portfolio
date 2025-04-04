@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>developer's portfolio</title>
+    <link rel="stylesheet" href="output.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    li{
+      list-style-type: none;
+      position:relative;
+      color: white;
+      &:hover{
+        font-weight:bold;
+      }
+    } 
+    li::after{
+      content: " ";
+      position:absolute;
+      bottom:-9px;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background-color: white;
+      transform: scalex(0);
+      transition: transform 0.15s ease;
+    } 
+    li:hover::after{
+      transform: scaleX(1);
+    }
+    </style>
+  </head>
+  <body class=" h-screen font-[poppins] bg-no-repeat bg-right-bottom bg-cover bg-fixed" style="background-image: url(pictures/background.png)">
+    <header class=" bg-zinc-600 w-screen">
+      <nav id="nav" class="flex left-0 items-center lg:justify-evenly px-12 h-16 lg:gap-8">
+        <img src="https://img.icons8.com/?size=100&id=8113&format=png&color=FFFFFF" class="toggle-button -rotate-180 transition-all lg:hidden text-white m-2 p-2 w-10 bg-white " alt="menu_button">
+        <a id="left" href="#" class="text-xl sm:text-2xl my-4 py-1 bg-transparent text-white whitespace-nowrap">RAJATH'S PORTFOLIO</a>
+          <div id="right" class="absolute transition-all -top-full left-0 z-10  max-lg:bg-zinc-600 w-full flex flex-col items-center gap-6 py-2 text-lg  lg:static justify-around lg:flex-row lg:justify-center lg:ml-60" >
+              <ul class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-8 gap-5"> 
+                <li>
+                  <a href="portfolio.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="#" class="bg-gray-500 rounded-lg px-3 py-2">My projects</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact me</a>
+                </li>
+              </ul>
+            </div> 
+          </div>
+        </nav>
+      </header>
+      <main class="m-2">
+        <h1 class="text-white text-center text-3xl font-bold">My Projects</h1>
+      </main>
+      <section class="flex gap-4 flex-col m-4 sm:flex-row">
+
+        <div id="project1" class="rounded-lg flex flex-col  border-b-4 border-slate-400  bg-opacity-40 backdrop:blur-lg bg-gradient-to-b from-slate-400 to-black h-max  w-full sm:w-[40vw]">
+          <span class="text-white text-xl mb-4 p-2 ">
+            1.To-do List
+          </span>
+          <span class="sm:m-3">
+            <img src="pictures/todo pic.png" alt="todo list" class="sm:w-[40vw] px-2 rounded-lg  ">
+          </span>
+          <span class="m-4 ">
+            <span><a href="https://github.com/Rajath-R-Prasad/To-do-List.git" class="text-white text-xl hover:text-gray-300 cursor-pointer"><img src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" alt="github" class="w-10 inline hover:scale-125">View Github repo</a></span>
+          </span>
+          <span class="p-3 text-gray-200">
+            <p>The To-Do List is a simple yet essential project that reinforces fundamental web development concepts while introducing real-world project structures. This project helps in understanding CRUD operations (Create, Read, Update, Delete), user interactions, and data persistence.</p>
+          </span>
+        </div>
+        <div id="project2" class="rounded-lg flex flex-col border-b-4 border-slate-400 bg-opacity-40 backdrop:blur-lg bg-gradient-to-b from-slate-400 to-black h-max  w-full sm:w-[40vw]">
+          <span class="text-white text-xl mb-4 p-2 ">
+            2.Developer Portfolio
+          </span>
+          <span class="sm:m-3">
+            <img src="pictures/portfolio pic.png" alt="todo list" class="sm:w-[40vw] px-2 rounded-lg  ">
+          </span>
+          <span class="m-3 ">
+            <span><a href="https://github.com/Rajath-R-Prasad/To-do-List.git" class="text-white text-xl hover:text-gray-300 cursor-pointer"><img src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" alt="github" class="w-10 inline hover:scale-125">View Github repo</a></span>
+          </span>
+          <span class="p-3 text-gray-200 ">
+            <p>A portfolio website is crucial for showcasing my skills, projects, and experience, especially as a beginner programmer.I have build this portfolio website using HTML, Tailwind CSS and little Javascript.I am able to achieve complete mobile responsive design because of mobile first approach of Tailwind.Tailwind is a powerful tool for building UIs and sleek responsive designs. </p>
+          </span>
+        </div>
+        </section>
+      <section>
+        <p class="text-gray-300 p-5 text-md rounded-lg border-b-4 border-r-4 border-slate-400  bg-opacity-40 backdrop:blur-lg bg-gradient-to-t from-slate-700 to-black mb-6 ">As a first-year engineering student passionate about coding and technology, I am actively building my skills through various projects. While my portfolio currently includes a few beginner-level projects, I am constantly working on new ideas to expand my expertise. From web development to programming challenges, I enjoy exploring different domains and applying my knowledge to real-world problems. As I progress in my learning journey, I will be adding more projects that showcase my growth, creativity, and problem-solving abilities. Stay tuned for updates as I continue to develop and refine my skills!
+        </p>
+      </section>
+
+
+      <script>
+        const togglebutton=document.querySelector('.toggle-button');
+        const nav=document.querySelector('#right');
+        
+    
+        togglebutton.addEventListener('click',()=>{
+          nav.classList.toggle('top-[64px]');
+          togglebutton.classList.toggle('-rotate-180')
+          
+        });
+        
+    
+        
+    
+      </script> 
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </body>
+    </html>
